@@ -1,0 +1,17 @@
+class Solution {
+    public int fib(int n) {
+        int F0 = 0;
+        int F1 = 1;
+        int count = 2;
+        if (n==0 || n == 1) {
+            return n;
+        }
+        while (count <= n) {
+            int temp = F1;
+            F1 = F0 + F1;
+            F0 = temp;
+            count++;
+        }
+        return F1;
+    }
+}
