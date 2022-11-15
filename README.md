@@ -1,1 +1,1 @@
-Here you can find a lot of basic Java programming questions that can be solved by basics of Java. The problems are mostly solved by conditional loops (if, else if, for, while). The problems are classified into easy, medium and hard. So, you can solve the programs from easy level to hard level.
+# Java-LeetCode-Problems
