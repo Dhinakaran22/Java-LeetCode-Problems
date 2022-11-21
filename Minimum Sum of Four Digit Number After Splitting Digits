@@ -1,0 +1,12 @@
+class Solution {
+    public int minimumSum(int num) {
+        int[] a = new int[4];
+        a[0] = num % 10;
+        a[1] = (num/10)%10;
+        a[2] = (num/100)%10;
+        a[3] = (num/1000)%10;
+        Arrays.sort(a);
+        int c = a[0]*10+a[2]+a[1]*10+a[3];
+        return c;
+    }
+}
