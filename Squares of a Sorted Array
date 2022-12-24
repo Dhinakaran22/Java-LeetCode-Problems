@@ -1,0 +1,11 @@
+class Solution {
+    public int[] sortedSquares(int[] nums) {
+        int[] b = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            double a = Math.pow(nums[i], 2);
+            b[i] = (int) a;
+        }
+        Arrays.sort(b);
+        return b;
+    }
+}
