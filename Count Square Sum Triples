@@ -1,0 +1,18 @@
+class Solution {
+    public int countTriples(int n) {
+        int count = 0;
+        for (int i=1;i<=n;i++) {
+            double c = Math.pow(i,2);
+            for (int j=1;j<=n;j++) {
+                double a = Math.pow(j,2);
+                for (int k=1;k<=n;k++) {
+                    double b = Math.pow(k,2);
+                    if (a + b == c) {
+                        count = count + 1;
+                    }
+                }
+            } 
+        }
+        return count;
+    }
+}
