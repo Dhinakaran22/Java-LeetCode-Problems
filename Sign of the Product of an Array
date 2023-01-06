@@ -1,0 +1,12 @@
+class Solution {
+    public int arraySign(int[] nums) {
+        float sum = 1;
+        for (int j=0;j<nums.length;j++) {
+            sum = nums[j] * sum;
+        }
+        System .out.println(sum);
+        sum = Math.signum(sum);
+        int ans = (int)sum;
+        return ans;
+    }
+}
