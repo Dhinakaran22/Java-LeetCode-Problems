@@ -1,0 +1,21 @@
+class Solution {
+    public int pivotInteger(int n) {
+        int total = 0;
+        int sum = 0;
+        for (int i=1;i<=n;i++) {
+            total = total + i;
+        }
+        for (int i=1;i<=n;i++) {
+            int x = i;
+            int ans = total - sum;
+            int rem = sum + x;
+            if (rem == ans) {
+                return x;
+            } 
+            else {
+                sum = sum + x;
+            }
+        }
+        return -1;
+    }
+}
