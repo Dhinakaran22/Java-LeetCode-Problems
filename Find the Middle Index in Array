@@ -1,0 +1,19 @@
+class Solution {
+    public int findMiddleIndex(int[] nums) {
+        int sum = 0;
+        int total = 0;
+        for (int j=0;j<nums.length;j++) {
+            total = total + nums[j];
+        }
+        for (int i=0;i<nums.length;i++) {
+            int ans = total - sum - nums[i];
+            if (sum == ans) {
+                return i;
+            } 
+            else {
+                sum = sum + nums[i];
+            }
+        }
+        return -1;
+    }
+}
